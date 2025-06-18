@@ -1,0 +1,83 @@
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>تسجيل الدخول</title>
+    <style>body {
+  font-family: 'Cairo', sans-serif;
+  background-color: #f0f4f4;
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+  color: #004d40;
+  margin-top: 50px;
+}
+
+form {
+  width: 90%;
+  max-width: 400px;
+  margin: 30px auto;
+  background-color: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  color: #00796b;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  border-color: #00796b;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #004d40;
+}
+</style>
+
+</head>
+<body>
+    <h2>تسجيل الدخول</h2>
+    <form>
+        <label>اسم المستخدم:</label>
+        <input type="text" name="username">
+        <br>
+        <label>كلمة المرور:</label>
+        <input type="password" name="password">
+        <br>
+     <button type="button" onclick="window.location.href='المريض.html'">دخول</button>
+
+    </form>
+</body>
+</html>

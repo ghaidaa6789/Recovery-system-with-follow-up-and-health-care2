@@ -1,0 +1,376 @@
+/* الخط العربي الأساسي */
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo', sans-serif;
+}
+
+body {
+    background: #f5f8fa;
+    color: #333;
+    direction: rtl;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* الهيدر */
+header {
+    background-color: #00796b;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* القسم */
+section {
+    margin-top: 30px;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #004d40;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #00796b;
+    padding-bottom: 8px;
+    width: fit-content;
+}
+
+/* شبكة الخدمات */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* بطاقات الخدمات */
+.service-card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.service-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #00796b;
+}
+
+.service-card p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* استجابة للشاشات الصغيرة */
+@media (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+    header h1 {
+        font-size: 1.8rem;
+    }
+    section h2 {
+        font-size: 1.5rem;
+    }
+    .service-card h3 {
+        font-size: 1.3rem;
+    }
+    .service-card p {
+        font-size: 1rem;
+    }
+}
+.main-nav ul {
+  list-style: none;
+  display: flex; /* <-- يجعل العناصر أفقية */
+  gap: 25px;      /* <-- مسافة بين العناصر */
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav li {
+  display: inline-block;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #b2dfdb;
+}
+.main-footer {
+  background-color: #004d40;
+  color: white;
+  padding: 40px 20px 20px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  margin-top: 50px;
+  font-size: 1rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-section h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #b2dfdb;
+  padding-bottom: 5px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-section ul li i {
+  color: #b2dfdb;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #80cbc4;
+}
+
+.social-icons a {
+  color: #b2dfdb;
+  font-size: 1.4rem;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ffffff;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 0.9rem;
+  opacity: 0.7;
+  border-top: 1px solid #ccc;
+  margin-top: 30px;
+}
+
+/* دعم الشاشات الصغيرة */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-section ul li {
+    justify-content: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: #f0f4f4;
+  margin: 0;
+  direction: rtl;
+}
+
+.main-header {
+  background-color: #00796b;
+  color: white;
+  padding: 20px 0;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #b2dfdb;
+}
+
+.dashboard h2 {
+  margin: 30px 0 20px;
+  color: #004d40;
+  text-align: center;
+}
+
+.grid-dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card i {
+  font-size: 2rem;
+  color: #00796b;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  color: #004d40;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #00796b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-footer {
+  background-color: #004d40;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: #f0f4f4;
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 40px;
+  color: #004d40;
+}
+
+form {
+  width: 80%;
+  max-width: 500px;
+  background-color: white;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin: 15px 0 5px;
+  color: #00796b;
+  font-weight: bold;
+}
+
+select,
+input[type="date"],
+input[type="time"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+select:focus,
+input:focus {
+  border-color: #00796b;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #004d40;
+}
